@@ -1,0 +1,19 @@
+<html>
+<body>
+    <h3>Az104 Practice Exams</h3>
+    <ul>
+        <li><a href="az104-practice-1.htm">az104-practice-1.htm</a></li>
+        <li><a href="az104-practice-2.htm">az104-practice-2.htm</a></li>
+        <li><a href="az104-practice-3.htm">az104-practice-3.htm</a></li>
+        <li><a href="az104-practice-4.htm">az104-practice-4.htm</a></li>
+        <li><a href="az104-practice-5.htm">az104-practice-5.htm</a></li>
+        <li><a href="az104-practice-6.htm">az104-practice-6.htm</a></li>
+    </ul>
+    <p>
+        <code>
+            sed -i.bak -e '/open-full-size-image--open-full-size-image-wrapper/,+13d' *.htm
+            for x in {1..6}; do mv az104-practice-${x}.htm{.bak,}; done
+        </code>
+    </p>
+</body>
+</html>

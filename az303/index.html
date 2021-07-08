@@ -1,0 +1,16 @@
+<html>
+<body>
+    <h3>az303 Practice Exams</h3>
+    <ul>
+        <li><a href="az303-practice-1.htm">az303-practice-1.htm</a></li>
+        <li><a href="az303-practice-2.htm">az303-practice-2.htm</a></li>
+        <li><a href="az303-practice-3.htm">az303-practice-3.htm</a></li>
+    </ul>
+    <p>
+        <code>
+            sed -i.bak -e '/open-full-size-image--open-full-size-image-wrapper/,+13d' *.htm
+            for x in {1..3}; do mv az303-practice-${x}.htm{.bak,}; done
+        </code>
+    </p>
+</body>
+</html>
